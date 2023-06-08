@@ -5,6 +5,9 @@
 - Configurar el correo electrónico: `git config --global user.email "correo@ejemplo.com"`
 - Configurar el editor de texto: `git config --global core.editor "nombre_editor"`
 
+## Revisar Configuración
+- Revisar el nombre de usuario: `git config --global user.name`
+
 ## Iniciar un Repositorio
 - Inicializar un nuevo repositorio: `git init`
 - Clonar un repositorio existente: `git clone url_repositorio`
