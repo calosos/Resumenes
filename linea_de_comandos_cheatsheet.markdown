@@ -1,0 +1,55 @@
+# Cheat Sheet de Comandos de Bash
+
+## Navegación y Manipulación de Directorios
+- Directorio actual: `pwd`
+- Cambiar de directorio: `cd ruta/directorio`
+- Listar archivos y directorios: `ls`
+- Crear un directorio: `mkdir nombre_directorio`
+- Crear un archivo: `touch nombre_archivo`
+- Eliminar un archivo: `rm nombre_archivo`
+- Eliminar un directorio (vacío): `rmdir nombre_directorio`
+- Copiar un archivo: `cp archivo_origen archivo_destino`
+- Mover un archivo o directorio: `mv origen destino`
+- Cambiar los permisos de un archivo o directorio: `chmod permisos archivo_o_directorio`
+- Cambiar el nombre de un directorio: `mv ruta/mi_directorio ruta/nuevo_directorio`
+
+## Operaciones de Archivos
+- Mostrar el contenido de un archivo: `cat archivo`
+- Mostrar el contenido de un archivo página por página: `less archivo`
+- Mostrar las primeras líneas de un archivo: `head archivo`
+- Mostrar las últimas líneas de un archivo: `tail archivo`
+- Buscar texto en un archivo: `grep texto archivo`
+- Filtrar y manipular texto: `awk 'patrón {acción}' archivo`
+- Concatenar archivos: `cat archivo1 archivo2 > archivo_final`
+
+## Variables y Entorno
+- Crear una variable: `variable=valor`
+- Mostrar el valor de una variable: `echo $variable`
+- Variables de entorno predefinidas:
+  - `$HOME`: Directorio del usuario actual
+  - `$PATH`: Ruta de búsqueda de comandos
+  - `$USER`: Nombre del usuario actual
+
+## Comandos de Procesos
+- Ejecutar un comando en segundo plano: `comando &`
+- Mostrar los procesos en ejecución: `ps`
+- Finalizar un proceso: `kill PID`
+
+## Compresión y Archivos Comprimidos
+- Comprimir un archivo o directorio: `tar -czvf archivo.tar.gz archivo_o_directorio`
+- Descomprimir un archivo o directorio: `tar -xzvf archivo.tar.gz`
+
+## Redireccionamiento y Tuberías
+- Redireccionar la salida a un archivo: `comando > archivo`
+- Redireccionar la salida y la salida de errores a un archivo: `comando > archivo 2>&1`
+- Redireccionar la entrada desde un archivo: `comando < archivo`
+- Conectar la salida de un comando con la entrada de otro: `comando1 | comando2`
+
+## Permisos y Propietarios de Archivos
+- Cambiar el propietario de un archivo o directorio: `chown nuevo_propietario archivo_o_directorio`
+- Cambiar el grupo de un archivo o directorio: `chgrp nuevo_grupo archivo_o_directorio`
+
+## Ayuda y Documentación
+- Mostrar el manual de un comando: `man comando`
+- Mostrar información sobre un comando: `info comando`
+- Mostrar la descripción de un comando: `comando --help`
