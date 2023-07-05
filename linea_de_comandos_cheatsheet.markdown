@@ -21,7 +21,13 @@
 - Buscar texto en un archivo: `grep texto archivo`
 - Filtrar y manipular texto: `awk 'patrón {acción}' archivo`
 - Concatenar archivos: `cat archivo1 archivo2 > archivo_final`
-
+- Mostrar información sobre el uso de espacio en disco de los sistemas de archivos montados en el sistema: `df [opciones] [archivo o directorio]`
+  - Opciones:
+    - -a : Muestra todos los sistemas de archivos, incluyendo aquellos que tienen tamaño 0.
+    - -h : Muestra los tamaños en un formato legible por humanos (ejemplo: "1K", "1M", "1G").
+    - -T : Muestra el tipo de sistema de archivos.
+    - -i : Muestra información sobre inodos en lugar de bloques de disco.
+    - -x tipo : Excluye los sistemas de archivos del tipo especificado.
 ## Variables y Entorno
 - Crear una variable: `variable=valor`
 - Mostrar el valor de una variable: `echo $variable`
