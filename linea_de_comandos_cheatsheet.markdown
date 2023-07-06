@@ -10,13 +10,18 @@
 - Eliminar un directorio (vacío): `rmdir nombre_directorio`
 - Copiar un archivo: `cp archivo_origen archivo_destino`
 - Mover un archivo o directorio: `mv origen destino`
-- Cambiar los permisos de un archivo o directorio: `chmod permisos archivo_o_directorio`
 - Cambiar el nombre de un directorio: `mv ruta/mi_directorio ruta/nuevo_directorio`
 
 ## Operaciones de Archivos
 - Mostrar el contenido de un archivo: `cat archivo`
 - Mostrar el contenido de un archivo página por página: `less archivo`
-- Mostrar las primeras líneas de un archivo: `head archivo`
+- Mostrar las primeras líneas de un archivo: `head [opciones] [archivo(s)]`
+  - Opciones:
+    - -n NUM : Muestra las primeras NUM líneas del archivo(s).
+    - -c NUM : Muestra los primeros NUM bytes del archivo(s).
+    - -q : No muestra encabezado de archivo al procesar múltiples archivos.
+    - -v : Muestra siempre el encabezado de archivo al procesar múltiples archivos.
+
 - Mostrar las últimas líneas de un archivo: `tail archivo`
 - Buscar texto en un archivo: `grep texto archivo`
 - Filtrar y manipular texto: `awk 'patrón {acción}' archivo`
