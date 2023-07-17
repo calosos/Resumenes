@@ -11,3 +11,9 @@ Toma las siguientes consideraciones
 - En inglés 
 - Manejo de errores
 - Comprobaciones de validación
+
+
+## Para hacer estos resumenes
+- Hacer consulta
+
+- `Quiero la respuesta en en formato de código Markdown`
