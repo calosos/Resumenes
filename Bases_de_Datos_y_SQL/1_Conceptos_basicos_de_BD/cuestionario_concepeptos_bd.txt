@@ -1,0 +1,141 @@
+﻿¿Qué es un dato cuantitativo?
+
+a) Representa cantidades o cualidades de las cosas.
+b) Describe cómo es el dato.
+c) Es la representación simbólica de un atributo o variable.
+d) Ninguna de las anteriores.
+
+¿Cuál es la función de los metadatos descriptivos?
+a) Describir la estructura de una base de datos.
+b) Proporcionar información adicional sobre otros datos.
+c) Categorizar los datos en una base de datos.
+d) Identificar las entidades en una base de datos.
+
+¿Cuál es la característica principal de los metadatos estructurales?
+a) Describen el contenido de un dato.
+b) Describen la estructura o formato en el que se almacenan los datos.
+c) Ayudan a comprender y categorizar los datos.
+d) Establecen reglas del negocio en una base de datos.
+
+¿Qué es una entidad en el contexto de una base de datos?
+a) Un objeto o concepto que se representa en una base de datos.
+b) Una asociación entre dos o más entidades.
+c) Una instancia o conjunto completo de datos en un momento específico.
+d) Una pieza de información que describe una entidad en una tabla.
+
+¿Qué es una base de datos?
+a) Una colección de información organizada y fácil de gestionar.
+b) Un lenguaje de consulta estructurado utilizado para comunicarse con las bases de datos.
+c) Un software utilizado para administrar bases de datos.
+d) Una estructura abstracta que define la estructura y las relaciones de los datos.
+
+¿Cuál de las siguientes afirmaciones es correcta?
+a) SQL es una base de datos.
+b) Una base de datos es un software.
+c) SQL es un lenguaje utilizado para realizar operaciones en bases de datos.
+d) Una base de datos es un modelo de datos.
+
+¿Qué define un modelo de datos?
+a) Un lenguaje común para comunicarse con las bases de datos.
+b) La estructura y las relaciones de los datos en una base de datos.
+c) Las reglas del negocio que se aplican a una base de datos.
+d) El número de elementos en un conjunto de datos.
+
+¿Qué significa cardinalidad en el contexto de las bases de datos?
+a) El número de elementos en un conjunto de datos.
+b) La descripción de cómo es un dato.
+c) La cantidad de atributos en una entidad.
+d) El lenguaje utilizado para modelar una base de datos.
+
+¿Cuál es la función de los metadatos en una base de datos?
+a) Proporcionar información adicional sobre los datos.
+b) Realizar operaciones en la base de datos.
+c) Definir la estructura y las relaciones de los datos.
+d) Interactuar con el lenguaje SQL.
+
+¿Cuál es la diferencia entre un dato cuantitativo y un dato cualitativo?
+a) El dato cuantitativo representa cantidades, mientras que el dato cualitativo describe características.
+b) El dato cuantitativo describe características, mientras que el dato cualitativo representa cantidades.
+c) Ambos representan cantidades, pero el dato cuantitativo utiliza números y el dato cualitativo utiliza palabras.
+d) Ambos describen características, pero el dato cuantitativo utiliza palabras y el dato cualitativo utiliza números.
+
+¿Qué es una relación en una base de datos?
+a) La conexión lógica o dependencia entre las entidades.
+b) La estructura de una tabla en una base de datos.
+c) El tipo de dato utilizado para almacenar información.
+d) La descripción de cómo es un dato en una tabla.
+
+¿Cuál es la diferencia entre una entidad y una instancia en una base de datos?
+a) Una entidad es una fila o registro en una tabla, mientras que una instancia es una columna.
+b) Una entidad es una tabla en una base de datos, mientras que una instancia es un dato individual.
+c) Una entidad representa un objeto o concepto, mientras que una instancia es un ejemplar específico de esa entidad.
+d) Una entidad tiene atributos o propiedades, mientras que una instancia tiene metadatos asociados.
+
+¿Qué implica el concepto de modelo de datos en una base de datos?
+a) Establecer reglas de negocio para el uso de la base de datos.
+b) Definir la estructura y las relaciones de los datos en la base de datos.
+c) Establecer la seguridad y los permisos de acceso a la base de datos.
+d) Optimizar las consultas y operaciones realizadas en la base de datos.
+
+¿Cuál es el objetivo principal de una base de datos?
+a) Almacenar y organizar datos de manera eficiente.
+b) Realizar cálculos y análisis complejos de datos.
+c) Facilitar la comunicación entre diferentes sistemas.
+d) Proporcionar una interfaz gráfica para visualizar datos.
+
+¿Qué es la clave primaria en una tabla de una base de datos?
+a) Una columna que almacena información adicional sobre los datos.
+b) Una restricción que garantiza la unicidad de los datos en una columna.
+c) Un tipo de dato especial utilizado para almacenar valores numéricos.
+d) El nombre de la tabla que contiene los datos de interés.
+
+¿Cuál de las siguientes afirmaciones describe mejor los metadatos descriptivos?
+a) Proporcionan información adicional sobre la estructura de una base de datos.
+b) Describen el formato en el que se almacenan los datos en una tabla.
+c) Ayudan a comprender y categorizar los datos en una base de datos.
+d) Establecen las relaciones entre diferentes tablas en una base de datos.
+
+¿Qué es una columna en una tabla de una base de datos?
+a) Una instancia específica de una entidad.
+b) Una relación entre dos o más entidades.
+c) Un atributo o propiedad de una entidad.
+d) Una estructura que organiza los datos en una base de datos.
+
+¿Cuál de las siguientes afirmaciones describe mejor una instancia en una base de datos?
+a) Un registro que contiene información adicional sobre los datos.
+b) Una consulta utilizada para obtener información de una base de datos.
+c) Un conjunto completo de datos en un momento específico.
+d) Una asociación lógica entre diferentes tablas en una base de datos.
+
+¿Qué es la normalización en el contexto de las bases de datos?
+a) El proceso de asegurar que los datos estén libres de redundancias y anomalías.
+b) La función que permite recuperar datos almacenados en una base de datos.
+c) El proceso de agregar metadatos a los datos para una mejor comprensión.
+d) La capacidad de realizar consultas complejas en una base de datos.
+
+¿Cuál de las siguientes afirmaciones describe mejor el lenguaje SQL?
+a) Es un modelo de datos utilizado para definir la estructura de una base de datos.
+b) Es un lenguaje de programación utilizado para desarrollar aplicaciones de bases de datos.
+c) Es un lenguaje utilizado para comunicarse con las bases de datos y realizar consultas y operaciones.
+d) Es un software utilizado para administrar y gestionar bases de datos.
+
+En el contexto de las bases de datos, ¿qué papel desempeñan los metadatos descriptivos y los metadatos estructurales? Proporciona ejemplos de cada uno y explica cómo contribuyen a la comprensión y organización de los datos.
+
+Explica la diferencia entre un dato cuantitativo y un dato cualitativo en el contexto de las bases de datos. Proporciona ejemplos de cada uno y discute cómo se pueden utilizar en el análisis de datos.
+
+Describe la importancia de los modelos de datos en el diseño de bases de datos. ¿Cómo ayudan a estandarizar la estructura de los datos y a establecer reglas claras para su interacción? Proporciona ejemplos de modelos de datos utilizados comúnmente.
+
+¿Cuál es el propósito principal de una clave primaria en una tabla de base de datos? Explica su importancia y cómo se utiliza para garantizar la integridad de los datos.
+
+Discute la importancia de la normalización en el diseño de bases de datos. ¿Qué beneficios aporta en términos de eliminación de redundancias y mejora del rendimiento de las consultas? Proporciona ejemplos de técnicas de normalización utilizadas en bases de datos.
+
+¿Cuál es la definición de dato en el contexto de las bases de datos? ¿Por qué un dato solo no genera información?
+
+¿Cuál es la diferencia entre un dato cuantitativo y un dato cualitativo? Proporciona ejemplos de cada uno.
+
+Explica qué son los metadatos descriptivos y cómo ayudan a comprender y categorizar los datos. Proporciona un ejemplo de un metadato descriptivo.
+
+Define qué son los metadatos estructurales y cómo describen la estructura o formato de los datos. Proporciona un ejemplo de metadatos estructurales.
+
+¿Cuál es la definición de una entidad en el contexto de una base de datos? ¿Cómo se representa una entidad en una base de datos relacional?
+
