@@ -8,9 +8,18 @@
 - Crear un archivo: `touch nombre_archivo`
 - Eliminar un archivo: `rm nombre_archivo`
 - Eliminar un directorio (vacío): `rmdir nombre_directorio`
+- Eliminar archivos y directorios: `rm [opciones] [archivo(s) o directorio(s)]`
+  - Opciones:
+    - -r : Elimina directorios y su contenido de forma recursiva.
+    - -f : Forzar la eliminación sin pedir confirmación.
+    - -i : Solicita confirmación antes de eliminar cada archivo o directorio.
+    - -v : Muestra información detallada sobre los archivos eliminados.
+    - -d : Elimina solo los directorios vacíos.
+    - --preserve-root : Evita la eliminación accidental de archivos del directorio raíz.
 - Copiar un archivo: `cp archivo_origen archivo_destino`
 - Mover un archivo o directorio: `mv origen destino`
 - Cambiar el nombre de un directorio: `mv ruta/mi_directorio ruta/nuevo_directorio`
+
 
 ## Operaciones de Archivos
 - Mostrar el contenido de un archivo: `cat archivo`
@@ -46,10 +55,6 @@
 - Mostrar los procesos en ejecución: `ps`
 - Finalizar un proceso: `kill PID`
 
-## Compresión y Archivos Comprimidos
-- Comprimir un archivo o directorio: `tar -czvf archivo.tar.gz archivo_o_directorio`
-- Descomprimir un archivo o directorio: `tar -xzvf archivo.tar.gz`
-
 ## Redireccionamiento y Tuberías
 - Redireccionar la salida a un archivo: `comando > archivo`
 - Redireccionar la salida y la salida de errores a un archivo: `comando > archivo 2>&1`
@@ -64,3 +69,26 @@
 - Mostrar el manual de un comando: `man comando`
 - Mostrar información sobre un comando: `info comando`
 - Mostrar la descripción de un comando: `comando --help`
+
+## Gestión de Paquetes
+
+- Instalar un paquete: `apt-get install [nombre_paquete]`
+- Desinstalar un paquete: `apt-get remove [nombre_paquete]`
+- Actualizar la lista de paquetes disponibles: `apt-get update`
+- Actualizar los paquetes instalados: `apt-get upgrade`
+- Buscar paquetes disponibles: `apt-cache search [palabra_clave]`
+
+## Compresión y Descompresión
+
+- Comprimir archivos o directorios en un archivo tar.gz: `tar -czvf [nombre_archivo.tar.gz] [archivos/directorios]`
+- Descomprimir un archivo tar.gz: `tar -xzvf [nombre_archivo.tar.gz]`
+- Comprimir archivos o directorios en un archivo zip: `zip [nombre_archivo.zip] [archivos/directorios]`
+- Descomprimir un archivo zip: `unzip [nombre_archivo.zip]`
+
+## Otros
+- Mostrar el historial de comandos ejecutados: `history`
+- Ejecutar un comando con privilegios de administrador: `sudo [comando]`
+- Mostrar la estrutura de las carpetas de forma gráfica: `tree`
+
+
+
