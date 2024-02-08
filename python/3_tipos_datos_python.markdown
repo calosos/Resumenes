@@ -10,5 +10,6 @@
 **String:** 
 **Integer:**
 **Float:** números reales  
+**Boolean:** dato que tiene dos posibles estados: `True` o `False`.
   
 **None:** es un tipo de dato especial en Python usado para indicar que una cosa esta vacía  o que no retorna nada

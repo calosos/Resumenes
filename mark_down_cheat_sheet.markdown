@@ -35,3 +35,8 @@
 
 ## Código
 `código en línea`
+
+```python
+def funcion_ejemplo():
+print("Hola, esto es un bloque de código.")
+```
