@@ -22,3 +22,19 @@ Instalación de software, rellenas un sitio de e - commerce con productos.
 - **Ventajas automatización:** consistencia, no hay cansancio, reduce errores, reduce el tiempo de las tareas y provee una forma para solucionar errores y los vuelve más sencillos de resolver. 
 
 **Desventajas autmatización:**  no todas las tareas son adecuadas para la automatización, las que impliquen tomar decisiones, con más información como las creativas.
+
+**Editores de código** Herramienta que permite escribir, debugear y ejecutar código de forma fácil. Proporcionan características como remarcar la sintaxis, la identación  automática, revisa error se sintaxis, y auto completa. Ejmplos VS Code, Jupyter Norebboks y Colab.
+**IDEs** Entornos de desarrollo integrado. Esta enriquecido con muchas más herramientas que los editores de código. Siempre incluyen un editor de código.  
+Use de python desde la línea de comandos
+Comandow:
+python --version: Devuelve la versión instalada de python.
+sudo apt install python3
+python: abre una terminal que permite ejecutar pequeñas instrucciones de python.
+exit()
+pip install jupyterlab
+jupyter-lab
+pip install notebook
+jupyter notebook
+!pip install <library name>
+
+python file_name.py: Ejecuta un script o programa.

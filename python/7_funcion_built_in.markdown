@@ -63,7 +63,7 @@ Son funciones que existen predeterminadas en python y pueden ser llamadas direct
 **open():**
 **ord():**
 **pow():**
-**print():**
+**print():** Imprime en la pantalla una cadena
 **property():**
 **range():**
 **repr():**

@@ -1,6 +1,6 @@
 # FUNCIONES
 ---
-**Funciones:** Grupo de sentencias relacionadas para realizar una tarea y devolver un resultado. Como: to_celsius(75)
+**Funciones:** Piezas de código que realizan una tarea única. Grupo de sentencias relacionadas para realizar una tarea y devolver un resultado. Como: to_celsius(75)
 Para hacer menos código, ya que se puede reutilizar el código, el código sea más fácil de utilizar
 - Se define una función de la siguiente manera:
 Se usa con la palabra reservada **“def”**
