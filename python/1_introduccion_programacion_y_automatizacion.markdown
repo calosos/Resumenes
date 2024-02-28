@@ -1,9 +1,5 @@
 # INTRODUCCIÓN PROGRAMACIÓN Y AUTOMATIZACIÓN
----
-<!-- **<span style="color:blue">Texto en Azul y Negrita</span>** -->
-**Programa de computación:** Son una serie de instrucciones que le dicen a la computadora que hacer paso a paso.  
 
-**Lenguaje de programación:** Es el código en el que se escriben las instrucciones de los programas. Tienen sintaxis y semántica.  
 
 **Sintaxis:**  reglas de cómo escribir las instrucciones en un lenguaje de programación.  
 
@@ -26,7 +22,7 @@ Instalación de software, rellenas un sitio de e - commerce con productos.
 **Editores de código** Herramienta que permite escribir, debugear y ejecutar código de forma fácil. Proporcionan características como remarcar la sintaxis, la identación  automática, revisa error se sintaxis, y auto completa. Ejmplos VS Code, Jupyter Norebboks y Colab.
 **IDEs** Entornos de desarrollo integrado. Esta enriquecido con muchas más herramientas que los editores de código. Siempre incluyen un editor de código.  
 Use de python desde la línea de comandos
-Comandow:
+Comandos:
 python --version: Devuelve la versión instalada de python.
 sudo apt install python3
 python: abre una terminal que permite ejecutar pequeñas instrucciones de python.
