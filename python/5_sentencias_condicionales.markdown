@@ -22,6 +22,8 @@ El resultado es `False`
 num = 4
 if num > 0:
     print(‘El número es positivo’)
+elif num != 10000:
+    pass
 elif num == 0:
     print(‘El número es cero’)
 else:
