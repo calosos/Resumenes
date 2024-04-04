@@ -5,7 +5,66 @@
 ## Conceptos principales
 - **`self`**: Parámetro que representa la instancia sobre la cual se  esta ejecutando el método. Permite acceder a los atributos
 de la instancia utilizando la notación de punto, `self.nombre`, que accederá al atributo nombre de esa instancia especifica del objeto de la clase.  
-- **Variables de instancia**: Son variables que contienen diferentes valores para diferentes instancias.   
+- **Variables de instancia**: Son variables que contienen diferentes valores para diferentes instancias. Van en el init
+```py
+class Estudiante:
+    def __init__(self, nombre, apellido, curso):
+        self.nombre=nombre
+        self.apellido=apellido
+    self.curso=curso
+```
+- **Variables de clase**: van fuera de las funciones. Es igual para todas las instancias, se podría tomar como un valor por defecto.
+```py
+class Estudiante:
+    horas_por_semana=36
+```
+**Ejemplo de acceso a las variables de instancia y variables de clase**
+```py
+class Estudiante:
+    
+    horas_por_semana=36
+    
+    def __init__(self, nombre, apellido, curso):
+        self.nombre=nombre
+        self.apellido=apellido
+        self.curso=curso
+    def resumen(self):
+        return print('Resumen:\n Nombre:{}\n Apellido:{}\n Curso:{}\n Horas por semana:{}'
+                     .format(self.nombre,self.apellido,self.curso,Estudiante.horas_por_semana))
+```
+
+**Modificar una variable de clase desde las variables de instancia:**
+```py
+class Estudiante:
+    horas_por_semana=36
+    numero_estudiantes=0 
+    def __init__(self, nombre, apellido, curso):
+        self.nombre=nombre
+        self.apellido=apellido
+        self.curso=curso
+        Estudiante.numero_estudiantes+=1
+    def resumen(self):
+        return print('Resumen:\n Nombre:{}\n Apellido:{}\n Curso:{}\n Horas por semana:{}'
+                     .format(self.nombre,self.apellido,self.curso,self.horas_por_semana))
+```
+- Cada que se cree una instancia el número de estudiantes se le va aumentar 1.  
+
+**LLamando las variables de clase con self**
+```py
+class Estudiante:
+    
+    horas_por_semana=36
+    
+    def __init__(self, nombre, apellido, curso):
+        self.nombre=nombre
+        self.apellido=apellido
+        self.curso=curso
+    def resumen(self):
+        return print('Resumen:\n Nombre:{}\n Apellido:{}\n Curso:{}\n Horas por semana:{}'
+                     .format(self.nombre,self.apellido,self.curso,self.horas_por_semana))
+```
+*Nota*
+A las variables de clase también se le pueden llamar con el self.
 **Atributos:** Cualidades que tiene la clase, como el color, etc.
 ### **Clases:** 
 - Son una herramienta fundamental para la POO. 
