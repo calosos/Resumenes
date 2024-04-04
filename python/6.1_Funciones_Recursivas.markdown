@@ -1,0 +1,39 @@
+# Funciones Recursivas
+---
+- Son funciones que se llaman a sí mismas. 
+- Se utilizan para resolver problemas que se pueden dividir en sub problemas de la misma naturaleza.
+- Se encarga de resolver uno de los sub problemas y luego se llama a sí misma para resolver los demás sub problemas.
+Ejemplo
+```python
+# Calcular el factorial de un número
+def factorial(n):
+    if n ==0:
+        return 1
+    else:
+        return n * factorial(n -1 )
+
+numero = 5
+print(f'El factorial de {numero} es {factorial(numero)}.')
+```
+**Explicación**
+- La función `factorial()` se llama a sí misma.
+- El caso base es cuando `n` es igual a 0. En este caso, la función devuelve 1.
+- El caso recursivo es cuando n es mayor que 0. En este caso, la función devuelve `n` multiplicado por el factorial de `n-1`.
+
+## Ventajas
+- Permite escribir código más elegante y conciso.
+- Son más fáciles de leer y de implementar.
+
+## Desventajas
+- Pueden ser menos eficientes que las funciones iterativas.
+- Pueden consumir más memoria que las funciones iterativas.
+
+# Cunado usar funciones recursivas
+- Cuando el problema se puede dividir en sub problemas de la misma naturaleza.
+- Cuando la solución iterativa es difícil de implementar.
+
+# Ejemplo de problemas que se pueden resolver con funciones recursivas:
+- Calcular la potencia de un número.
+- Calcular el máximo común divisor de dos números.
+- Recorrer un árbol.
+- Ordenar una lista.

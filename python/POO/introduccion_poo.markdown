@@ -1,26 +1,58 @@
 # INTRODUCCIÓN PROGRAMACIÓN ORIENTADA A OBJETOS
 ---
-**Programación Orientada a Objetos:** Una forma de pensamiento acerca de como implementar el código.
+- **Programación Orientada a Objetos:** Una forma de pensamiento acerca de como implementar el código.
 
-# Conceptos principales
+## Conceptos principales
+- **`self`**: Parámetro que representa la instancia sobre la cual se  esta ejecutando el método. Permite acceder a los atributos
+de la instancia utilizando la notación de punto, `self.nombre`, que accederá al atributo nombre de esa instancia especifica del objeto de la clase.  
+- **Variables de instancia**: Son variables que contienen diferentes valores para diferentes instancias.   
+**Atributos:** Cualidades que tiene la clase, como el color, etc.
+### **Clases:** 
+- Son una herramienta fundamental para la POO. 
+- Permite crear objetos que encapsulas datos y comportamientos, lo que hace que el código sea más modular y reutilizable.
+#### **Ventajas de las clases / Pilares de la POO:**
+- **Modularidad:** Permiten dividir el código en módulos independientes.
+- **Reutilización:** Permiten reutilizar código en diferentes programas.
+- **Encapsulamiento:** Permiten ocultar la implementación de los detalles de un objeto.
+- **Herencia:** Permiten crear nuevas clases a partir de clases existentes.
+#### **Ejemplos de problemas que se pueden resolver con clases:**
+- Simulación de objetos del mundo real (personas, animales, coches, etc.).
+- Desarrollo de interfaces gráficas de usuario (GUI).
+- Implementación de algoritmos complejos.  
 
-**Atributos:**  
-**`self`**: Parámetro que representa la instancia sobre la cual se  esta ejecutando el método. Permite acceder a los atributos
-de la instancia utilizando la notación de punto, `self.nombre`, que accederá al atributo nombre de esa instancia especifica del objeto de la clase.
-**Variables de instancia**: Son variables que contienen diferentes valores para diferentes instancias.   
-**Método**: Son comportamientos asociados a los parámetros de un objeto que modifica su estado. En python se implementan con la sintaxis de las funciones y pertenecen a una instancia específica de una clase. Esto es llamar a un método de la clase.  
-- Los métodos tienen varias categorías:
-1. **Métodos de instancia:** Son el tipo más común de métodos en Python. Se definen dentro de una clase creando  funciones dentro de la definición de la clase. Cuando instancias objetos de una clase, esas instancias individuales pueden tener sus métodos  lo que permite que el programa controle y modifique esos objetos directamente. Pueden tomar un parámetro llamado `self`.
+**EJEMPLO DE CLASE**
 ```python
 class Persona:
-    def __init__(self, nombre, edad):
+    # Atributo de la clase
+    especie = 'Homo sapiens'
+
+    def __init__(self, nombre, edad, apellido):
         # Atributos de instancia: nombre y edad
         self.nombre = nombre  # Atributo 'nombre'
         self.edad = edad      # Atributo 'edad'
 
-    # Método de instancias para mostrar información
     def mostrar_informacion(self):
+        # Método de instancias para mostrar información
         print(f"Nombre: {self.nombre}, Edad: {self.edad}")
+    
+    def es_mayor_de_edad(self):
+        if self.edad >= 18:
+            return True
+        else:
+            return False
+
+    def set_edad(self, edad):
+        self.edad = edad
+
+    def get_edad(self)
+        return self.edad 
+    
+    def saludar(self):
+        # Método de la clase 
+        print(f'Hola mi nombre es {self.nombre} {self.apellido}.')
+    
+    def cumplir_anios(self):
+        self.edad += 1
 
 # Crear instancias de la clase Persona
 persona1 = Persona("Juan", 25)   # Instancia con nombre "Juan" y edad 25
@@ -30,8 +62,39 @@ persona2 = Persona("Maria", 30)  # Instancia con nombre "Maria" y edad 30
 persona1.mostrar_informacion()   # Muestra información de persona1
 persona2.mostrar_informacion()   # Muestra información de persona2
 
+# Acceso a los atributos
+print(f"Nombre: {persona1.nombre}")
+print(f"Apellido: {persona1.apellido}")
+print(f"Edad: {persona1.edad}")
+
+# Llamada a los métodos
+persona1.saludar()
+persona1.cumplir_anios()
+print(f"Edad después de cumplir años: {persona1.edad}")
+
 ```
-2. **Métodos de clase:** se llaman para la propia clase en lugar de ser para una instancia específica. Están marcados con un decorador `@classmethod`y toman un parámetro `cls` que apunta a la clase, y no a una instancia específica, cuando se llama al método. Un caso de uso común es crear y modificar estructuras de datos que contienen registros para todas las instancias de una clase. Por lo general, los programadores crean un lista dentro de la definición de la clase, y métodos para agregar instancias de clase a esa lista con el fin de realizar  un seguimiento de esa clase.
+**Explicación:**
+- La clase Persona define dos atributos de clase: especie y `__init__`.
+- El método `__init__` se llama al crear una nueva instancia de la clase y se utiliza para inicializar los atributos de la instancia.
+- La clase Persona define 3 métodos: saludar(), cumplir_anios() mostrar_informacion().
+- Los métodos de la clase pueden acceder y modificar los atributos de la instancia.  
+
+### **Métodos:**
+- Son comportamientos asociados a los parámetros de un objeto que modifica su estado. 
+- Son las acciones que puede realizar la clase.
+- En python se implementan con la sintaxis de las funciones y pertenecen a una instancia específica de una clase. Esto es llamar a un método de la clase.   
+Los métodos tienen varias categorías:
+#### **Métodos de instancia:** 
+- Son el tipo más común de métodos en Python. Se definen dentro de una clase creando  funciones dentro de la definición de la clase. 
+- Cuando instancias objetos de una clase, esas instancias individuales pueden tener sus métodos  lo que permite que el programa controle y modifique esos objetos directamente.
+- Pueden tomar un parámetro llamado `self`.
+
+#### **Métodos de clase:** 
+- Se llaman para la propia clase en lugar de ser para una instancia específica.
+- Están marcados con un decorador `@classmethod`y toman un parámetro `cls` que apunta a la clase, y no a una instancia específica, cuando se llama al método. 
+- Un caso de uso común es crear y modificar estructuras de datos que contienen registros para todas las instancias de una clase. 
+- Por lo general, los programadores crean un lista dentro de la definición de la clase, y métodos para agregar instancias de clase a esa lista con el fin de realizar  un seguimiento de esa clase.
+
 ```python
 class Empleado:
     empleados = []  # Lista para realizar un seguimiento de todas las instancias de Empleado
@@ -87,7 +150,12 @@ producto4 = Producto("Zapatos", 50, "Ropa")
 # Llamar al método de clase para mostrar la lista de productos por categoría
 Producto.mostrar_productos_por_categoria()
 ```
-3. **Métodos estáticos:** son marcados por el decorador `@staticmethod`, no toma un parámetro `self` o `cls`. Se comportan como funciones simples, excepto que puedes llamarlos directamente desde la clase. No se necesita instanciar la clase para llamar a estos métodos; los métodos simplemente residen en la clase. Esto se debe a que las definiciones de clase son en sí mismas un objeto (ed decir, una instancia de una base abstracta), lo que reduce la sobrecarga y permite encapsular funciones de manera fácil y accesible. Se usan cuando no necesita acceder a ningún dato específico de la instancia o de la clase.
+#### **Métodos estáticos:** 
+- Son marcados por el decorador `@staticmethod`, no toma un parámetro `self` o `cls`. 
+- Se comportan como funciones simples, excepto que puedes llamarlos directamente desde la clase. 
+- No se necesita instanciar la clase para llamar a estos métodos; los métodos simplemente residen en la clase. Esto se debe a que las definiciones de clase son en sí mismas un objeto (ed decir, una instancia de una base abstracta), lo que reduce la sobrecarga y permite encapsular funciones de manera fácil y accesible. 
+- Se usan cuando no necesita acceder a ningún dato específico de la instancia o de la clase.
+
 **EJEMPLO**
 ```python
 class Calculadora:
@@ -119,7 +187,6 @@ class FileManager:
     def is_valid_extension(filename):
         # Obtener la extensión del archivo
         _, file_extension = filename.rsplit('.', 1) if '.' in filename else (None, None)
-
         # Verificar si la extensión está en la lista de extensiones permitidas
         return file_extension.lower() in FileManager.allowed_extensions
 
@@ -136,16 +203,13 @@ print(f"¿'{file1.filename}' tiene una extensión válida?: {result1}")
 print(f"¿'{file2.filename}' tiene una extensión válida?: {result2}")
 
 ```
-## Eligiendo un tipo de método
-
+#### **Eligiendo un tipo de método**
 El tipo de método que elijas usar, ya sea instancia, clase o estático, depende de qué datos necesita acceder el método.
 - Los métodos de instancia son para datos individuales de objetos.
 - Los métodos de clase son para datos compartidos.
 - Los métodos estáticos son para tareas relacionadas que no necesitan acceder o modificar datos de objetos o clases.
-
-**Puntos clave a tener en cuenta*
-
-Recuerda, en Python, los métodos son una forma de agrupar comportamientos con objetos, permitiéndote interactuar y modificar el estado de esos objetos. Sin embargo, los métodos estáticos ofrecen una manera de agrupar funciones juntas, para ser utilizadas en general en cualquier otro tipo de objeto. Agrupar funciones de esta manera ayuda a organizarlas de manera limpia y las empaqueta para su reutilización en otros proyectos de codificació
+#### **Puntos clave a tener en cuenta**
+- Recuerda, en Python, los métodos son una forma de agrupar comportamientos con objetos, permitiéndote interactuar y modificar el estado de esos objetos. Sin embargo, los métodos estáticos ofrecen una manera de agrupar funciones juntas, para ser utilizadas en general en cualquier otro tipo de objeto. Agrupar funciones de esta manera ayuda a organizarlas de manera limpia y las empaqueta para su reutilización en otros proyectos de codificación.
 
 **EJEMPLO 1:**
 ```py
