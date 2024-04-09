@@ -169,9 +169,24 @@ class Empleado:
         for empleado in cls.empleados:
             print(f"Nombre: {empleado.nombre}, Salario: {empleado.salario}")
 
+class Programadores(Empleado):
+    def __init__():
+        super.__init__(self, nombre, salario, seniority)
+        self.seniority = seniority
+
+    @classmethod
+    def constructor(cls, string):
+        nombre, salario, seniority = string.split('-')
+        return cls(nombre, salario, seniority)
+
+    def resumen(self):
+        print(f'El Programador {self.seniority} - {self.nombre} Esta ganando: ${str(self.salario)}')
+
 # Crear instancias de la clase Empleado
 empleado1 = Empleado("Juan", 50000)
 empleado2 = Empleado("Maria", 60000)
+empleado3 = Empleado.constructor(string='Jose-100000-Sr.')
+empleado.resumen()
 
 # Llamar al método de clase para mostrar la lista de empleados
 Empleado.mostrar_empleados()
