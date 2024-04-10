@@ -168,6 +168,11 @@ class Empleado:
         print("Lista de empleados:")
         for empleado in cls.empleados:
             print(f"Nombre: {empleado.nombre}, Salario: {empleado.salario}")
+    
+    @classmethod
+    def constructor_flexible(cls, string, *args):
+        nombre, salario = string.split('-')
+        return cls(nombre, salario, *args)
 
 class Programadores(Empleado):
     def __init__():
@@ -190,7 +195,8 @@ empleado.resumen()
 
 # Llamar al método de clase para mostrar la lista de empleados
 Empleado.mostrar_empleados()
-
+dato = 'Juan-12000'
+empleado4 = Empleado.constructor_flexible(dato, 'Jr.')
 ```
 ```python
 class Producto:
