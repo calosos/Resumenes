@@ -1,0 +1,16 @@
+# Regresión
+---
+- Busca conoces los coeficientes multiplicados por la x que nos da el valor de salida.  
+$Y=f(x)$  
+$x = x1, x2, xn$  
+$y'=b +w1x1`$
+
+Dónde:
+- `y'` es la etiqueta predicha que es un resultado deseado.
+- `b` es la ordenada al origen, la intersección en también puede ser identificada como `w0`.
+- `w1` es la ponderación del atributo 1, o la pendiente.
+- `x1` es la entrada conocida.
+## Partes para la regresión
+1. Fase de entrenamiento: Se busca minimizar la función de costes.
+2. La función de costes mide el error que cometemos. Este proceso se consigue mediante el `descenso del gradiente`.
+`descenso del gradiente`: algoritmo para encontrar los mínimos de la función.
